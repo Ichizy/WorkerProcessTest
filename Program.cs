@@ -19,8 +19,9 @@ namespace WorkerProcessTest
             var services = new ServiceCollection();
             services.AddOptions();
 
+            //TODO: Add creds to esw-pricing-test
             var client = new DocumentClient(
-                new Uri("https://esw-pricing-test.documents.azure.com:443/"), "n5j9MgXnC5max77rxgC6Oc63ult17Li8RKKW3bLg7h95BUQ9jNFe3XIKQatCEhrqzNWfx11MDmiVDfu6mZVxEQ==",
+                new Uri(""), "",
                 null, ConsistencyLevel.Strong);
 
             services.AddSingleton<IDocumentClient>(client);
