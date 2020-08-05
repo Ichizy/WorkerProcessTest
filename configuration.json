@@ -1,0 +1,12 @@
+{
+  "CosmosDataStoreOptions": {
+    "Database": "WorkerProcess",
+    "Collection": "WorkerLeases",
+    "ConsistencyLevel": "Strong"
+  },
+  "WorkerLeaseOptions": {
+    "WorkerType": "workerProcessTest",
+    "Priority": "0",
+    "LeaseInterval": "0:01:00"
+  }
+}
